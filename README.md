@@ -10,3 +10,5 @@ Preprocessing steps, including resizing and normalization, to enhance model perf
 Model Training using the U-Net architecture with optimized hyperparameters to achieve effective segmentation results.
 Results: Achieves notable accuracy in identifying lower grade gliomas, demonstrating the potential for aiding diagnostic processes in medical imaging.
 This project exemplifies the application of deep learning in medical imaging, with potential uses in improving diagnostic workflows in healthcare
+
+![dataset](https://github.com/user-attachments/assets/bc37a7d6-9a72-4797-b890-533f681b33ca)
