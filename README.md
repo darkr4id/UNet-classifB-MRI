@@ -12,3 +12,6 @@ Results: Achieves notable accuracy in identifying lower grade gliomas, demonstra
 This project exemplifies the application of deep learning in medical imaging, with potential uses in improving diagnostic workflows in healthcare
 
 ![dataset](https://github.com/user-attachments/assets/bc37a7d6-9a72-4797-b890-533f681b33ca)
+
+
+![dataset](https://github.com/user-attachments/assets/f0a81b0b-ef13-4a7e-a813-a986b9051e07)
