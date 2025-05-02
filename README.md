@@ -22,3 +22,7 @@ This project exemplifies the application of deep learning in medical imaging, wi
 ![image](https://github.com/user-attachments/assets/34685633-747e-4296-b783-b49ee4ebc27f)
 
 ![til](https://github.com/user-attachments/assets/549eaa8b-3c68-40fa-a994-9dc6f3fb9159)
+
+Future work
+-More epochs
+-Different UNet backbones.
