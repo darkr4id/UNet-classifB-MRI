@@ -16,3 +16,9 @@ This project exemplifies the application of deep learning in medical imaging, wi
 
 ![image](https://github.com/user-attachments/assets/ef4ca5e2-aa39-47ef-9b3d-ba6f01647057)
 
+![image](https://github.com/user-attachments/assets/a6fff1d1-1e9c-4603-92f9-a849f3f104c5)
+![image](https://github.com/user-attachments/assets/b48420ee-67ea-426f-9ea1-bec5987d4991)
+![image](https://github.com/user-attachments/assets/da5a4ca8-bd93-4047-a200-8beaa8baa5c5)
+![image](https://github.com/user-attachments/assets/34685633-747e-4296-b783-b49ee4ebc27f)
+
+![image](https://github.com/user-attachments/assets/dcf279a7-0103-4954-a516-da37915f0b5a)
