@@ -26,3 +26,10 @@ This project exemplifies the application of deep learning in medical imaging, wi
 Future work
 -More epochs
 -Different UNet backbones.
+
+Reference
+Kaggle, tutorial on UNet based image segmentation for biomedical applcations
+https://www.kaggle.com/competitions/hubmap-kidney-segmentation/discussion/200955
+https://www.kaggle.com/code/akshitsharma1/unet-architecture-explained-in-one-shot-tutorial
+
+This page and project is still under construction, 2025 May.
