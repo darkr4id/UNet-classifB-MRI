@@ -1,3 +1,73 @@
+# 🧠 Brain MRI Image Segmentation with U-Net for Lower Grade Glioma Detection
+
+This repository contains a deep learning pipeline for segmenting brain MRI images using a U-Net architecture to detect the presence of **lower grade gliomas** — a category of brain tumors that are critical to identify early for effective treatment planning.
+
+---
+
+## 📌 Project Overview
+
+This project demonstrates the application of **U-Net**, a convolutional neural network architecture specifically designed for **biomedical image segmentation**, to classify and segment **brain MRI scans** based on the presence or absence of lower grade gliomas.
+
+---
+
+## 🎯 Objective
+
+- Segment brain MRI images to highlight areas affected by lower grade gliomas.  
+- Classify the presence or absence of gliomas from MRI data.  
+- Support early diagnosis and aid radiologists in identifying tumors more accurately and efficiently.
+
+---
+
+## 🚀 Key Features
+
+### 🔬 Model Architecture
+- Uses **U-Net**, a powerful segmentation model tailored for medical imaging.
+- Architecture optimized for precise pixel-level classification.
+
+### 🧾 Dataset
+- Labeled MRI brain scans annotated with the presence/absence of lower grade gliomas.
+- Suitable for binary classification and segmentation tasks.
+
+### 🧹 Preprocessing Pipeline
+- Image resizing  
+- Normalization  
+- Format conversion (e.g., to NumPy arrays or tensors)
+
+### 🏋️ Model Training
+- Optimized hyperparameters (e.g., learning rate, loss function)
+- Epoch checkpoints and validation tracking
+- Real-time metrics and loss monitoring
+
+### 📈 Performance & Results
+- Achieves **notable segmentation accuracy**
+- Effective tumor localization and classification
+- Demonstrates deep learning’s power in medical diagnostics
+
+---
+
+## 📊 Applications
+
+- Clinical decision support in neuro-oncology  
+- Early-stage brain tumor diagnosis  
+- Automation of MRI analysis workflows  
+
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- TensorFlow / Keras  
+- NumPy, OpenCV, Matplotlib  
+- Jupyter Notebook  
+- U-Net architecture  
+
+---
+
+## 📂 Repository Structure
+
+
+
+
 Brain MRI Image Segmentation with U-Net for Lower Grade Glioma Detection
 This notebook demonstrates the implementation of a U-Net model for brain MRI image segmentation to classify the presence of lower grade gliomas. The primary objective is to distinguish MRI scans based on whether they show evidence of lower grade gliomas, a type of brain tumor.
 
