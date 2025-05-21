@@ -1,69 +1,91 @@
-# 🧠 Brain MRI Image Segmentation with U-Net for Lower Grade Glioma Detection
+# 🧠 Brain MRI Image Segmentation using U-Net & FPN for Lower Grade Glioma Detection
 
-This repository contains a deep learning pipeline for segmenting brain MRI images using a U-Net architecture to detect the presence of **lower grade gliomas** — a category of brain tumors that are critical to identify early for effective treatment planning.
+This repository implements a deep learning pipeline for segmenting brain MRI images using U-Net and FPN architectures to detect **lower grade gliomas** — slow-growing brain tumors that require early diagnosis for effective treatment.
 
 ---
 
 ## 📌 Project Overview
 
-This project demonstrates the application of **U-Net**, a convolutional neural network architecture specifically designed for **biomedical image segmentation**, to classify and segment **brain MRI scans** based on the presence or absence of lower grade gliomas.
+This project applies state-of-the-art segmentation models (U-Net and Feature Pyramid Networks) to classify and localize lower grade gliomas in T1-weighted brain MRI scans. It demonstrates a practical use of medical AI for assisting in neuro-oncological diagnostics.
 
 ---
 
 ## 🎯 Objective
 
-- Segment brain MRI images to highlight areas affected by lower grade gliomas.  
-- Classify the presence or absence of gliomas from MRI data.  
-- Support early diagnosis and aid radiologists in identifying tumors more accurately and efficiently.
+- Segment brain MRIs to locate tumor regions
+- Classify whether an MRI slice contains lower grade gliomas
+- Provide interpretable predictions that support early tumor diagnosis
 
 ---
 
-## 🚀 Key Features
+## 📂 Dataset
 
-### 🔬 Model Architecture
-- Uses **U-Net**, a powerful segmentation model tailored for medical imaging.
-- Architecture optimized for precise pixel-level classification.
+The dataset is loaded from a directory structure and includes:
 
-### 🧾 Dataset
-- Labeled MRI brain scans annotated with the presence/absence of lower grade gliomas.
-- Suitable for binary classification and segmentation tasks.
+- T1-weighted brain MRI scans
+- Corresponding ground truth segmentation masks
 
-### 🧹 Preprocessing Pipeline
-- Image resizing  
-- Normalization  
-- Format conversion (e.g., to NumPy arrays or tensors)
+Each sample contains:
+- `images/` — raw brain MRI slices in `.tif` format  
+- `masks/` — binary tumor masks
+- https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation
 
-### 🏋️ Model Training
-- Optimized hyperparameters (e.g., learning rate, loss function)
-- Epoch checkpoints and validation tracking
-- Real-time metrics and loss monitoring
-
-### 📈 Performance & Results
-- Achieves **notable segmentation accuracy**
-- Effective tumor localization and classification
-- Demonstrates deep learning’s power in medical diagnostics
+*Note: The dataset appears to be pre-annotated. If using the BraTS dataset or any clinical source, proper licensing and citation are required.*
 
 ---
 
-## 📊 Applications
+## 🧹 Preprocessing Steps
 
-- Clinical decision support in neuro-oncology  
-- Early-stage brain tumor diagnosis  
-- Automation of MRI analysis workflows  
+The notebook performs several preprocessing operations:
 
----
-
-## 🛠️ Technologies Used
-
-- Python  
-- TensorFlow / Keras  
-- NumPy, OpenCV, Matplotlib  
-- Jupyter Notebook  
-- U-Net architecture  
+- Image resizing to 256×256 pixels
+- Normalization of pixel intensity values to [0,1]
+- Conversion to grayscale (if applicable)
+- Conversion of masks into binary arrays
+- Augmentation-ready data loading using custom generators
 
 ---
 
-## 📂 Repository Structure
+## 🏗️ Model Architectures
+
+### ✅ U-Net:
+- Standard encoder–decoder structure with skip connections
+- Designed for biomedical segmentation
+
+### ✅ FPN (Feature Pyramid Network):
+- Multi-scale feature learning
+- Enhances fine-grained segmentation at different spatial resolutions
+
+---
+
+## 🏋️ Training Details
+
+- Optimizer: Adam  
+- Loss function: Binary Cross-Entropy (BCE)  
+- Evaluation metric: Dice Coefficient  
+- Epochs: 25 (can be modified)  
+- Batch size: 16  
+
+Trained using Keras with TensorFlow backend.
+
+---
+
+## 📈 Results
+
+The model outputs:
+- Segmentation masks that closely align with ground truth
+- Dice coefficients during training showing learning progress
+- Sample visualizations comparing predictions vs. true masks
+
+Performance appears qualitatively good, though exact accuracy metrics (e.g., Dice score values) aren't logged numerically in the notebook.
+
+---
+
+## 🖼️ Sample Output
+
+```python
+# Displayed in notebook:
+# Raw Image | Ground Truth | Predicted Mask
 
 
 
