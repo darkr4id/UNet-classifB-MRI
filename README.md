@@ -83,7 +83,6 @@ Performance appears qualitatively good, though exact accuracy metrics (e.g., Dic
 
 ## 🖼️ Sample Output
 
-```python
 # Displayed in notebook:
 # Raw Image | Ground Truth | Predicted Mask
 
