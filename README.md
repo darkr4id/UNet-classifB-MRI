@@ -1,16 +1,16 @@
-# 🧠 Brain MRI Image Segmentation using U-Net & FPN for Lower Grade Glioma Detection
+#  Brain MRI Image Segmentation using U-Net & FPN for Lower Grade Glioma Detection
 
 This repository implements a deep learning pipeline for segmenting brain MRI images using U-Net and FPN architectures to detect **lower grade gliomas** — slow-growing brain tumors that require early diagnosis for effective treatment.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This project applies state-of-the-art segmentation models (U-Net and Feature Pyramid Networks) to classify and localize lower grade gliomas in T1-weighted brain MRI scans. It demonstrates a practical use of medical AI for assisting in neuro-oncological diagnostics.
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Segment brain MRIs to locate tumor regions
 - Classify whether an MRI slice contains lower grade gliomas
@@ -18,7 +18,7 @@ This project applies state-of-the-art segmentation models (U-Net and Feature Pyr
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 The dataset is loaded from a directory structure and includes:
 
@@ -34,7 +34,7 @@ Each sample contains:
 
 ---
 
-## 🧹 Preprocessing Steps
+##  Preprocessing Steps
 
 The notebook performs several preprocessing operations:
 
@@ -46,19 +46,19 @@ The notebook performs several preprocessing operations:
 
 ---
 
-## 🏗️ Model Architectures
+##  Model Architectures
 
-### ✅ U-Net:
+###  U-Net:
 - Standard encoder–decoder structure with skip connections
 - Designed for biomedical segmentation
 
-### ✅ FPN (Feature Pyramid Network):
+### FPN (Feature Pyramid Network):
 - Multi-scale feature learning
 - Enhances fine-grained segmentation at different spatial resolutions
 
 ---
 
-## 🏋️ Training Details
+##  Training Details
 
 - Optimizer: Adam  
 - Loss function: Binary Cross-Entropy (BCE)  
@@ -81,7 +81,7 @@ Performance appears qualitatively good, though exact accuracy metrics (e.g., Dic
 
 ---
 
-## 🖼️ Sample Output
+##  Sample Output
 
 
 ![dataset](https://github.com/user-attachments/assets/bc37a7d6-9a72-4797-b890-533f681b33ca)
