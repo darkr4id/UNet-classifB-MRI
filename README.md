@@ -30,7 +30,6 @@ Each sample contains:
 - `masks/` — binary tumor masks
 - https://www.kaggle.com/datasets/mateuszbuda/lgg-mri-segmentation
 
-*Note: The dataset appears to be pre-annotated. If using the BraTS dataset or any clinical source, proper licensing and citation are required.*
 
 ---
 
